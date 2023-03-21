@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[BowlingAlley] (
+    [Number]           INT NOT NULL,
+    [OperationalState] BIT NOT NULL,
+    PRIMARY KEY CLUSTERED ([Number] ASC)
+);

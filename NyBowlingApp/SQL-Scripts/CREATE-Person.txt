@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Person] (
+    [Phone]    NVARCHAR (11) NOT NULL,
+    [PName]    NVARCHAR (50) NOT NULL,
+    [ShoeSize] INT           NOT NULL,
+    PRIMARY KEY CLUSTERED ([Phone] ASC)
+);
