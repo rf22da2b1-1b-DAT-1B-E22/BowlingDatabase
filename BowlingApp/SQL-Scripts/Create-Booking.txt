@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Booking] (
+    [Id]           INT           IDENTITY (10, 2) NOT NULL,
+    [BookingDate]  DATE          NOT NULL,
+    [BookingTime]  TIME (7)      NOT NULL,
+    [PersonPhone]  NVARCHAR (11) NOT NULL,
+    [BowlingAlley] INT           NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    FOREIGN KEY ([PersonPhone]) REFERENCES [dbo].[Person] ([Phone]),
+    FOREIGN KEY ([BowlingAlley]) REFERENCES [dbo].[BowlingAlley] ([Number])
+);
